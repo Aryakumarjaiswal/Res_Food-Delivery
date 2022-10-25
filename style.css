@@ -1,0 +1,194 @@
+/*CSS CODE FOR MegaProject(*/
+/* CSS IN BODY */
+
+
+/* CSS in Navigation Bar */                   /*If we lesser the opacity then image  gets lighter*/
+#navbar{position: relative;
+       display:flex;  top:0px;left: 0px;
+  }
+.itembody{
+    display: flex;
+    justify-content: space-between;
+}
+li{list-style: none;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+a{
+    
+    text-decoration: none;
+    margin:0px 4px;
+    padding:2px 14px;
+    list-style-type:none;
+    font-size: 16px;
+    border-radius: 5px;
+    height:16px;color:aliceblue;
+}
+a:hover{
+    background-color: wheat;
+    color:purple;cursor: pointer;
+}
+.logo{height: 80px;padding:0px 2px;
+border-radius: 13px;}
+#navbar::before{ display: flex;
+    position: absolute;
+    height:100%;width:100%;
+    content: "";opacity:0.74;
+    background-color:rgb(36, 22, 36);
+    top:0px;left: 0px;
+    z-index: -2;
+}
+/* CSS In Section Part */
+#home{display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+  
+    text-align: center; height: 450px;
+    /*  */
+}
+#home::before{display:flex;top:0px;left: 0px;
+    content: " ";
+    position: absolute;width: 100%;
+    animation-name: bgimage;
+    background:url('https://cdn.pixabay.com/photo/2016/05/12/00/07/appetizer-1386743_960_720.jpg') no-repeat center center/cover;
+opacity: 0.90;
+z-index: -3;
+height: 100%;
+animation-iteration-count: 1;
+animation-duration: 2s;
+animation-timing-function: ease-out;
+
+}
+@keyframes bgimage {            /*Giving Animation To the landing Page Image*/
+    from{
+        height:0px;
+    }
+    to{
+       
+    }
+    
+}
+#head1{ position: relative;display:flex;
+    background:none;height: 490px;}
+
+#htitle{
+    font-size: 2em;
+    color: rgb(19, 14, 14);
+    text-shadow: 0.5px 0.5px  rgb(216, 207, 214);
+   
+}  
+.text{color:white;}
+.text2{color:white;
+margin:0px 0px 0px 0px;} 
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap'); 
+#but1{  /*Click Here Button*/
+    padding:3.3px 65px;
+    border-radius: 6px;
+    font-size: 17px;
+    cursor:pointer;
+    font-family: 'Bubblegum Sans', cursive; background-color: peru;
+    transition-property: background-color;
+    transition-duration: 0.8s;
+    
+}
+#but1:hover{
+   background-color: rgb(148, 47, 148);
+ /*  transform:translate(2px,2px);*/
+/*transform:skew(45deg);*/
+   
+}
+.services-container{display: flex;
+   margin:0px 0px; }
+#services{display: flex;
+    margin:2px 2px;
+}
+#services .box{
+border:2px solid rebeccapurple;border-radius: 14px;
+margin:0px 2px;background-color: rgb(223, 164, 137);
+}
+.h-primery {
+
+padding:22px 0px;font-size: 2em;
+}
+.h secondary{  
+     text-align: center;}
+  
+ 
+ .slogo{
+    display: block;
+    margin:auto; 
+     height:160px;
+ }
+h2{display: block;
+text-align: center;}
+
+.head2{display: block;position: relative;
+   text-align: center;
+    top:50px;font-size: 2em;
+}  
+/*Client Body*/ 
+#clientbody{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.clients img {  justify-content: space-around;
+    position:relative;
+    top:50px;
+    height:120px;
+    margin:0px 40px;
+}
+/*Cover Image for Client Section*/
+#clientsection{
+    position:relative;
+    height:180px;margin:100px 0px;
+}
+#clientsection::before{ content:" ";
+    position:absolute;
+   width:100%;
+    height:280px;
+    background: url('https://cdn.pixabay.com/photo/2016/11/06/23/31/breakfast-1804457__340.jpg') no-repeat center center/cover;
+    /*background:url('https://cdn.pixabay.com/photo/2016/05/12/00/07/appetizer-1386743_960_720.jpg') no-repeat center center/cover;*/
+    z-index: -11;
+    opacity: 0.645;
+    border-radius: 30px;;
+}
+/*Contact Form Part*/
+#SectionforContact{ display: flex;
+    flex-direction: column;
+    justify-content:center;
+align-items: center;
+    margin-top:0px 0px;position:relative; }
+.contact form{display:flex;flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.contactitle{
+ font-size:2.3em;
+}
+.contact form div input,
+.contact form div textarea{
+    width: 400px;
+    height: 30px; border-radius: 3px;
+    
+}
+.addressarea{width: 420px;
+height:60px;}
+.formborder{
+  border-radius:30px;
+    width:65vw;height:400px;
+}
+#SectionforContact::before{position:absolute;
+    content:" ";
+    background:url('https://media.istockphoto.com/photos/woman-hand-holding-icon-customer-support-concept-copy-space-picture-id1141639313?b=1&k=20&m=1141639313&s=170667a&w=0&h=IgZAh25v60C7OkxyVKQWgOWfRRbs_Nfv9hwXpJH2ZRo=')no-repeat center center/cover;
+    height:400px;width:100%;
+    z-index:-1;
+}
+ .credentials{
+  padding:9px 0px;
+ 
+ 
+} 
+.footer{    
+    text-align: center;
+}
+
